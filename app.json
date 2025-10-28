@@ -33,24 +33,12 @@
     "platforms": ["ios", "android", "web"],
 
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
-        }
-      ]
-    ],
+  "expo-router"
+],
+"experiments": {
+  "typedRoutes": true,
+  "reactCompiler": true
+}
 
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
   }
 }
