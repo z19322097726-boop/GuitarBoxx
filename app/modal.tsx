@@ -1,8 +1,15 @@
 import { Link } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
+import { Text, View } from 'react-native';
+
+function ThemedText(props: { children: React.ReactNode; style?: any }) {
+  return <Text style={[{ color: 'white', fontSize: 16 }, props.style]}>{props.children}</Text>;
+}
+
+function ThemedView(props: { children: React.ReactNode; style?: any }) {
+  return <View style={[{ backgroundColor: '#00000000' }, props.style]}>{props.children}</View>;
+}
 
 export default function ModalScreen() {
   return (
